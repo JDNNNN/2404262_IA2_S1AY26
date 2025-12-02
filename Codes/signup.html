@@ -369,6 +369,12 @@
           joinedDateInput.value = `${yyyy}-${mm}-${dd}`; // (2a) DOM update
         }
       });
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          window.location.href = "index1.html";
+        });
     </script>
   </body>
 </html>
