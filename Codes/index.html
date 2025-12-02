@@ -1,313 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- BASIC META SETTINGS -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CrocsCustoms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <title>Login | Elite Kicks & Slides</title>
-
-    <!-- GOOGLE FONTS: SPECIAL ELITE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      /* =====================================================================
-         GLOBAL STYLES — Applies to the whole page
-      ===================================================================== */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Special Elite", monospace;
-      }
-
-      /* Page structure and background */
-      body,
-      html {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(245, 245, 245, 0.95);
-      }
-
-      /* =====================================================================
-         LOGIN CONTAINER — White card holding everything
-      ===================================================================== */
-      .login-container {
-        width: 600px;
-        padding: 50px 35px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.95);
-        border: 1px solid #ccc;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      /* =====================================================================
-         LOGO SECTION
-      ===================================================================== */
-      .logo-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 25px;
-      }
-
-      /* Logo image styling */
-      .logo-section img {
-        width: 60%;
-        max-width: 350px;
-        height: auto;
-      }
-
-      /* =====================================================================
-         HEADINGS AND SMALL TEXT
-      ===================================================================== */
-      .login-container h1 {
-        text-align: center;
-        font-size: 28px;
-        margin-bottom: 10px;
-        color: #222;
-      }
-
-      .slogan {
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 20px;
-        color: #555;
-      }
-
-      .business-intro {
-        text-align: center;
-        font-size: 14px;
-        margin-bottom: 25px;
-        color: #444;
-        line-height: 1.5;
-      }
-
-      /* =====================================================================
-         FORM SECTION
-      ===================================================================== */
-      form#loginForm {
-        width: 100%;
-      }
-
-      /* Input labels */
-      label {
-        font-weight: 600;
-        margin-bottom: 6px;
-        color: #333;
-        display: block;
-      }
-
-      /* Username + Password fields */
-      input[type="text"],
-      input[type="password"] {
-        width: 100%;
-        padding: 12px 15px;
-        border-radius: 6px;
-        border: 2px solid #ccc;
-        margin-bottom: 15px;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      /* Inputs when selected */
-      input[type="text"]:focus,
-      input[type="password"]:focus {
-        border-color: #0077cc;
-        box-shadow: 0 0 8px rgba(0, 119, 204, 0.3);
-        outline: none;
-      }
-
-      /* Remember me checkbox */
-      .checkbox-group {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 20px;
-      }
-
-      /* =====================================================================
-         BUTTON STYLES
-      ===================================================================== */
-      button {
-        width: 100%;
-        padding: 14px 0;
-        background: linear-gradient(135deg, #0077cc, #005fa3);
-        color: #fff;
-        font-weight: bold;
-        font-size: 16px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        margin-bottom: 15px;
-      }
-
-      button:hover {
-        background: linear-gradient(135deg, #005fa3, #0077cc);
-      }
-
-      /* =====================================================================
-         EXTRA LINKS (Forgot password, Sign up)
-      ===================================================================== */
-      .forgot-password,
-      .signup-link {
-        text-align: center;
-        font-size: 14px;
-        margin-top: 12px;
-      }
-
-      .forgot-password a,
-      .signup-link a {
-        color: #0077cc;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-      .forgot-password a:hover,
-      .signup-link a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- MAIN LOGIN CARD -->
-    <div class="login-container">
-      <!-- LOGO -->
-      <div class="logo-section">
-        <img
-          src="../Assets/Logo2.png"
-          alt="Elite Kicks & Slides Store Logo"
-          class="logo"
-        />
+<header class="header" role="banner">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <div class="logo" aria-hidden="true">CC</div>
+      <div>
+        <div style="font-weight:700">CrocsCustoms</div>
+        <div style="font-size:0.85rem;color:var(--muted)">Step Comfortably In Your Style</div>
       </div>
+    </a>
+    <nav class="nav" role="navigation" aria-label="Main Navigation">
+      <a href="login.html">Login</a>
+	  <a href="shop.html">Shop</a>
+      <a href="custom.html">Customize</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About Us</a>    
+    </nav>
+  </div>
+</header>
 
-      <!-- PAGE TITLE -->
-      <h1>Login</h1>
-      &nbsp; &nbsp;
-      <h2>Welcome to Elite Kicks & Slides</h2>
-
-      &nbsp; &nbsp;
-      <!-- SHORT TAGLINE -->
-      <p class="slogan">
-        Step up your style with premium sneakers & slides for all.
-      </p>
-      &nbsp; &nbsp;
-      <!-- BUSINESS DESCRIPTION TEXT -->
-      <p class="business-intro">
-        Discover the finest collection of luxury sneakers and slides curated for
-        both men and women. Elevate your footwear game with exclusive designs
-        and unmatched comfort.
-      </p>
-
-      <!-- =====================================================
-           LOGIN FORM
-      ===================================================== -->
-      <form id="loginForm">
-        <!-- USERNAME FIELD -->
-        <label for="username">Username</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          required
-          autocomplete="username"
-        />
-
-        <!-- PASSWORD FIELD -->
-        <label for="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          required
-          autocomplete="current-password"
-        />
-
-        <!-- REMEMBER ME (checkbox) -->
-        <div class="checkbox-group">
-          <input type="checkbox" id="rememberMe" name="rememberMe" />
-          <label for="rememberMe">Remember Me</label>
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Customize your Crocs. Stand Out from the Crowd.</h1>
+      <p>Purchase original Crocs and fun Jibbitz charms, or design a one-of-a-kind pair of Crocs using our Custom Crocs service.</p>
+      <p><a class="btn btn-primary" href="custom.html">Customize Now</a> <a class="btn btn-outline" href="shop.html">Shop Crocs</a></p>
+      <hr>
+      <b><h3>Why Shop with Us?</h3></b>
+	  <h4>We offer: </h4>
+      <ul>
+        <li>Fast local delivery Islandwide</li>
+        <li>Secure checkout & order tracking</li>
+        <li>Unique custom designs</li>
+      </ul>
+    </div>
+    <div style="padding:1rem">
+      <div class="card" aria-hidden="true">
+        <img src=".\img\customPreview.jpg" alt="Custom Crocs preview">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <h3>Featured: Custom Starter Pack</h3>
+          
+          </div>
+          <div><a class="btn btn-primary" href="custom.html">Start</a></div>
         </div>
-
-        <!-- LOGIN BUTTON -->
-        <button type="submit">Login</button>
-
-        <!-- FORGOT PASSWORD LINK -->
-        <div class="forgot-password">
-          <a href="#">Forgot Your Password?</a>
-        </div>
-      </form>
-
-      <!-- SIGNUP REDIRECT -->
-      <div class="signup-link">
-        <p>New Shopper? <a href="../Codes/signup.html">Create an account</a></p>
       </div>
     </div>
+  </section>
 
-    <script>
-      /* ============================================================
-   IA #2 — LOGIN PAGE JAVASCRIPT
-   This script covers:
-   2a. DOM Manipulation
-   2b. Event Handling
-   2c. Form Validation / Input Handling
-   2d. Basic Interactivity / Logic
-   ============================================================ */
+  <section>
+    <h2 style="margin-bottom:0.5rem">Featured Products</h2>
+    <div class="grid" role="list">
+      <article class="card" role="listitem" aria-label="Classic Crocs">
+        <img src=".\img\classic.jpg" alt="Classic Crocs" height="100">
+        <h3>Classic Clog</h3>
+        <div class="price">$6000.00</div>
+        <p style="color:var(--muted);margin:1">Comfortable classic clog in many colors.</p>
+        <div class="actions"><a class="btn btn-primary" href="product.html">View</a><a class="btn btn-outline" href="cart.html">Add to Cart</a></div>
+      </article>
+      <article class="card" role="listitem" aria-label="Jibbitz Pack">
+        <img src=".\img\jibbitz.jpg" alt="Jibbitz pack">
+        <h3>Jibbitz Charm Pack</h3>
+        <div class="price">$1250.00</div>
+        <p style="color:var(--muted);margin:1">5-piece Jibbitz pack — mix & match.</p>
+        <div class="actions"><a class="btn btn-primary" href="product.html">View</a><a class="btn btn-outline" href="cart.html">Add to Cart</a></div>
+      </article>
+      <article class="card" role="listitem" aria-label="Custom Service">
+        <img src=".\img\designurown.avif" alt="Design Service">
+        <h3>Custom Design Service</h3>
+        <div class="price">Price Varies</div>
+        <p style="color:var(--muted);margin:1">Personalize colors, patterns, and Jibbitz.</p>
+        <div class="actions"><a class="btn btn-primary" href="custom.html">Customize</a><a class="btn btn-outline" href="cart.html">Add to Cart</a></div>
+      </article>
+    </div>
+  </section>
 
-      /* ============================================================
-   (2b) EVENT LISTENER + (2a) DOM ACCESS
-   • Add a submit event listener to the login form
-   • getElementById() = proper DOM manipulation
-   ============================================================ */
-      document
-        .getElementById("loginForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          // Prevent page refresh (2b — event handling)
+</main>
 
-          /* ============================================================
-     (2a) DOM MANIPULATION
-     • Accessing form fields using "this.username" & "this.password"
-     • Trim removes unwanted spaces
-     ============================================================ */
-          const username = this.username.value.trim();
-          const password = this.password.value.trim();
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;gap:1rem">
+      <div>
+        <strong>CrocsCustoms</strong> — Custom Crocs & Jibbitz.
+        <div style="font-size:0.9rem;color:var(--muted)">Made for the assignment: Web Programming (CIT2011)</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:0.9rem;color:var(--muted)">Contact: <a href="mailto:2405548@students.utech.edu.jm">2405548@students.utech.edu.jm</a></div>
+        <div style="font-size:0.85rem;color:var(--muted)">&copy; CrocsCustoms</div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-          /* ============================================================
-     (2c) FORM VALIDATION
-     • Checks if both fields are filled
-     • Could be expanded to include password/email rules
-     ============================================================ */
-          if (username && password) {
-            /* ============================================================
-       (2d) INTERACTIVITY + LOGIC
-       • If valid, greet user with a dynamic message
-       • Demonstrates control structures (if/else)
-       ============================================================ */
-            alert(`Welcome back, ${username}! Redirecting to home page...`);
-
-            // Redirect to home page (simple navigation logic)
-            window.location.href = "../Codes/index1.html";
-          } else {
-            /* ============================================================
-       (2c) VALIDATION FEEDBACK
-       • Gives user an error message
-       • Updates UI through alert (DOM output)
-       ============================================================ */
-            alert("Please fill in both fields.");
-          }
-        });
-    </script>
-  </body>
+</body>
 </html>
